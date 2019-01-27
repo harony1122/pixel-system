@@ -413,7 +413,7 @@ coll.first().delete()
 client.on('ready', function(){
   client.user.setStatus("dnd");
     var ms = 40000 ;	
-    var setGame = ['!inv','!help'];	
+    var setGame = ['Pixel THE BEST','by Haron'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
