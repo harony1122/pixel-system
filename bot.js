@@ -3068,7 +3068,7 @@ client.on("message", message => {
  
     if(command == prefix+""){
  
-        if (!message.guild.member(message.author).hasPermission('MOVE_MEMBERS') || !message.guild.member(message.author).hasPermission('MANAGE_GUILD')) {
+        if (!message.guild.member(message.author).hasPermission('MOVE_MEMBERS') || !message.guild.member(message.author).hasPermission('MOVE_MEMBERS')) {
             return message.reply('you do not have permission to perform this action!');
         }
  
