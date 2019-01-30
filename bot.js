@@ -52,7 +52,7 @@ client.on('message', message => {
 
  
 
-if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' ليس لديك صلاحيات');
+if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(' ليس لديك صلاحيات');
 
            message.channel.overwritePermissions(message.guild.id, {
 
@@ -76,7 +76,7 @@ if (message.content === "فتح الشات") {
 
  
 
-if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('ليس لديك صلاحيات');
+if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply('ليس لديك صلاحيات');
 
            message.channel.overwritePermissions(message.guild.id, {
 
